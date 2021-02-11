@@ -1,0 +1,119 @@
+{
+    "meta": {
+        "page": 1,
+        "resources_per_page": 10,
+        "total_resources": 11
+    },
+    "data": [
+        {
+            "type": "photos",
+            "id": "1",
+            "attributes": {
+                "title": "Photo 362",
+                "uri": "https://picsum.photos/id/439/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/1"
+            }
+        },
+        {
+            "type": "photos",
+            "id": "2",
+            "attributes": {
+                "title": "Photo 277",
+                "uri": "https://picsum.photos/id/328/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/2"
+            }
+        },
+        {
+            "type": "photos",
+            "id": "3",
+            "attributes": {
+                "title": "Photo 673",
+                "uri": "https://picsum.photos/id/782/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/3"
+            }
+        },
+        {
+            "type": "photos",
+            "id": "4",
+            "attributes": {
+                "title": "Photo 724",
+                "uri": "https://picsum.photos/id/56/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/4"
+            }
+        },
+        {
+            "type": "photos",
+            "id": "5",
+            "attributes": {
+                "title": "Photo 647",
+                "uri": "https://picsum.photos/id/307/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/5"
+            }
+        },
+        {
+            "type": "photos",
+            "id": "6",
+            "attributes": {
+                "title": "Photo 386",
+                "uri": "https://picsum.photos/id/364/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/6"
+            }
+        },
+        {
+            "type": "photos",
+            "id": "7",
+            "attributes": {
+                "title": "Photo 080",
+                "uri": "https://picsum.photos/id/24/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/7"
+            }
+        },
+        {
+            "type": "photos",
+            "id": "8",
+            "attributes": {
+                "title": "Photo 821",
+                "uri": "https://picsum.photos/id/352/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/8"
+            }
+        },
+        {
+            "type": "photos",
+            "id": "9",
+            "attributes": {
+                "title": "Photo 297",
+                "uri": "https://picsum.photos/id/127/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/9"
+            }
+        },
+        {
+            "type": "photos",
+            "id": "10",
+            "attributes": {
+                "title": "Photo 021",
+                "uri": "https://picsum.photos/id/842/400/300.jpg"
+            },
+            "links": {
+                "self": "/photos/10"
+            }
+        }
+    ]
+}

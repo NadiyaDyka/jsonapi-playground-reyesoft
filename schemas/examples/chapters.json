@@ -1,0 +1,279 @@
+{
+    "meta": {
+        "page": 1,
+        "resources_per_page": 10,
+        "total_resources": 11
+    },
+    "data": [
+        {
+            "type": "chapters",
+            "id": "1",
+            "attributes": {
+                "title": "Chapter 100",
+                "ordering": 7372164
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "201"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "43"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/1"
+            }
+        },
+        {
+            "type": "chapters",
+            "id": "2",
+            "attributes": {
+                "title": "Chapter 689",
+                "ordering": 7717053
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "202"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "49"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/2"
+            }
+        },
+        {
+            "type": "chapters",
+            "id": "3",
+            "attributes": {
+                "title": "Chapter 242",
+                "ordering": 5207275
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "203"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "45"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/3"
+            }
+        },
+        {
+            "type": "chapters",
+            "id": "4",
+            "attributes": {
+                "title": "Chapter 406",
+                "ordering": 6177920
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "204"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "15"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/4"
+            }
+        },
+        {
+            "type": "chapters",
+            "id": "5",
+            "attributes": {
+                "title": "Chapter 178",
+                "ordering": 3143839
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "205"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "14"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/5"
+            }
+        },
+        {
+            "type": "chapters",
+            "id": "6",
+            "attributes": {
+                "title": "Chapter 294",
+                "ordering": 361279
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "206"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "29"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/6"
+            }
+        },
+        {
+            "type": "chapters",
+            "id": "7",
+            "attributes": {
+                "title": "Chapter 183",
+                "ordering": 892540
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "207"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "29"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/7"
+            }
+        },
+        {
+            "type": "chapters",
+            "id": "8",
+            "attributes": {
+                "title": "Chapter 082",
+                "ordering": 8393289
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "208"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "21"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/8"
+            }
+        },
+        {
+            "type": "chapters",
+            "id": "9",
+            "attributes": {
+                "title": "Chapter 770",
+                "ordering": 6699434
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "209"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "19"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/9"
+            }
+        },
+        {
+            "type": "chapters",
+            "id": "10",
+            "attributes": {
+                "title": "Chapter 201",
+                "ordering": 1447740
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "210"
+                        }
+                    ]
+                },
+                "book": {
+                    "data": {
+                        "type": "books",
+                        "id": "7"
+                    }
+                }
+            },
+            "links": {
+                "self": "/chapters/10"
+            }
+        }
+    ]
+}

@@ -1,0 +1,334 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "meta",
+    "data"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "page",
+        "resources_per_page",
+        "total_resources"
+      ],
+      "properties": {
+        "page": {
+          "title": "Page",
+          "type": "integer",
+          "examples": [
+            1
+          ],
+          "default": 0
+        },
+        "resources_per_page": {
+          "title": "Resources_per_page",
+          "type": "integer",
+          "examples": [
+            10
+          ],
+          "default": 0
+        },
+        "total_resources": {
+          "title": "Total_resources",
+          "type": "integer",
+          "examples": [
+            11
+          ],
+          "default": 0
+        }
+      }
+    },
+    "data": {
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items": {
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "type",
+          "id",
+          "attributes",
+          "relationships",
+          "links"
+        ],
+        "properties": {
+          "type": {
+            "title": "Type",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "books"
+            ]
+          },
+          "id": {
+            "title": "Id",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "1"
+            ]
+          },
+          "attributes": {
+            "title": "Attributes",
+            "type": "object",
+            "required": [
+              "title",
+              "date_published",
+              "isbn"
+            ],
+            "properties": {
+              "title": {
+                "title": "Title",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "Graham-Borer"
+                ]
+              },
+              "date_published": {
+                "title": "Date_published",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "1994-09-02"
+                ],
+                "pattern": "^.*$"
+              },
+              "isbn": {
+                "title": "Isbn",
+                "type": "integer",
+                "examples": [
+                  3880958769
+                ],
+                "default": 0
+              }
+            }
+          },
+          "relationships": {
+            "title": "Relationships",
+            "type": "object",
+            "required": [
+              "author",
+              "chapters",
+              "photos",
+              "series",
+              "stores"
+            ],
+            "properties": {
+              "author": {
+                "title": "Author",
+                "type": "object",
+                "required": [
+                  "data"
+                ],
+                "properties": {
+                  "data": {
+                    "title": "Data",
+                    "type": "object",
+                    "required": [
+                      "type",
+                      "id"
+                    ],
+                    "properties": {
+                      "type": {
+                        "title": "Type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "authors"
+                        ]
+                      },
+                      "id": {
+                        "title": "Id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "5"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "chapters": {
+                "title": "Chapters",
+                "type": "object",
+                "required": [
+                  "data"
+                ],
+                "properties": {
+                  "data": {
+                    "title": "Data",
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                      "title": "Items",
+                      "type": "object",
+                      "required": [
+                        "type",
+                        "id"
+                      ],
+                      "properties": {
+                        "type": {
+                          "title": "Type",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                            "chapters"
+                          ]
+                        },
+                        "id": {
+                          "title": "Id",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                            "23"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "photos": {
+                "title": "Photos",
+                "type": "object",
+                "required": [
+                  "data"
+                ],
+                "properties": {
+                  "data": {
+                    "title": "Data",
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                      "title": "Items",
+                      "type": "object",
+                      "required": [
+                        "type",
+                        "id"
+                      ],
+                      "properties": {
+                        "type": {
+                          "title": "Type",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                            "photos"
+                          ]
+                        },
+                        "id": {
+                          "title": "Id",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                            "151"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "series": {
+                "title": "Series",
+                "type": "object",
+                "required": [
+                  "data"
+                ],
+                "properties": {
+                  "data": {
+                    "title": "Data",
+                    "type": "object",
+                    "required": [
+                      "type",
+                      "id"
+                    ],
+                    "properties": {
+                      "type": {
+                        "title": "Type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "series"
+                        ]
+                      },
+                      "id": {
+                        "title": "Id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                          "38"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "stores": {
+                "title": "Stores",
+                "type": "object",
+                "required": [
+                  "data"
+                ],
+                "properties": {
+                  "data": {
+                    "title": "Data",
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                      "title": "Items",
+                      "type": "object",
+                      "required": [
+                        "type",
+                        "id"
+                      ],
+                      "properties": {
+                        "type": {
+                          "title": "Type",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                            "stores"
+                          ]
+                        },
+                        "id": {
+                          "title": "Id",
+                          "type": "string",
+                          "default": "",
+                          "examples": [
+                            "27"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "links": {
+            "title": "Links",
+            "type": "object",
+            "required": [
+              "self"
+            ],
+            "properties": {
+              "self": {
+                "title": "Self",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "/books/1"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

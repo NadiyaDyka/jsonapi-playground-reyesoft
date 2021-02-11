@@ -1,0 +1,121 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+        "meta",
+        "data"
+    ],
+    "properties": {
+        "meta": {
+            "title": "Meta",
+            "type": "object",
+            "required": [
+                "page",
+                "resources_per_page",
+                "total_resources"
+            ],
+            "properties": {
+                "page": {
+                    "title": "Page",
+                    "type": "integer",
+                    "examples": [
+                        1
+                    ],
+                    "default": 0
+                },
+                "resources_per_page": {
+                    "title": "Resources_per_page",
+                    "type": "integer",
+                    "examples": [
+                        10
+                    ],
+                    "default": 0
+                },
+                "total_resources": {
+                    "title": "Total_resources",
+                    "type": "integer",
+                    "examples": [
+                        11
+                    ],
+                    "default": 0
+                }
+            }
+        },
+        "data": {
+            "title": "Data",
+            "type": "array",
+            "default": [],
+            "items": {
+                "title": "Items",
+                "type": "object",
+                "required": [
+                    "type",
+                    "id",
+                    "attributes",
+                    "links"
+                ],
+                "properties": {
+                    "type": {
+                        "title": "Type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "photos"
+                        ]
+                    },
+                    "id": {
+                        "title": "Id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "1"
+                        ]
+                    },
+                    "attributes": {
+                        "title": "Attributes",
+                        "type": "object",
+                        "required": [
+                            "title",
+                            "uri"
+                        ],
+                        "properties": {
+                            "title": {
+                                "title": "Title",
+                                "type": "string",
+                                "default": "",
+                                "examples": [
+                                    "Photo 362"
+                                ]
+                            },
+                            "uri": {
+                                "title": "Uri",
+                                "type": "string",
+                                "default": "",
+                                "examples": [
+                                    "https://picsum.photos/id/439/400/300.jpg"
+                                ]
+                            }
+                        }
+                    },
+                    "links": {
+                        "title": "Links",
+                        "type": "object",
+                        "required": [
+                            "self"
+                        ],
+                        "properties": {
+                            "self": {
+                                "title": "Self",
+                                "type": "string",
+                                "default": "",
+                                "examples": [
+                                    "/photos/1"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

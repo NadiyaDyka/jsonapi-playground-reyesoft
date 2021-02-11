@@ -1,0 +1,180 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+        "meta",
+        "data"
+    ],
+    "properties": {
+        "meta": {
+            "$id": "#root/meta",
+            "title": "Meta",
+            "type": "object",
+            "required": [
+                "page",
+                "resources_per_page",
+                "total_resources"
+            ],
+            "properties": {
+                "page": {
+                    "title": "Page",
+                    "type": "integer",
+                    "examples": [
+                        1
+                    ],
+                    "default": 0
+                },
+                "resources_per_page": {
+                    "title": "Resources_per_page",
+                    "type": "integer",
+                    "examples": [
+                        10
+                    ],
+                    "default": 0
+                },
+                "total_resources": {
+                    "title": "Total_resources",
+                    "type": "integer",
+                    "examples": [
+                        11
+                    ],
+                    "default": 0
+                }
+            }
+        },
+        "data": {
+            "title": "Data",
+            "type": "array",
+            "default": [],
+            "items": {
+                "title": "Items",
+                "type": "object",
+                "required": [
+                    "type",
+                    "id",
+                    "attributes",
+                    "relationships",
+                    "links"
+                ],
+                "properties": {
+                    "type": {
+                        "title": "Type",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "series"
+                        ]
+                    },
+                    "id": {
+                        "title": "Id",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "1"
+                        ]
+                    },
+                    "attributes": {
+                        "title": "Attributes",
+                        "type": "object",
+                        "required": [
+                            "title"
+                        ],
+                        "properties": {
+                            "title": {
+                                "title": "Title",
+                                "type": "string",
+                                "default": "",
+                                "examples": [
+                                    "Series 8931153"
+                                ]
+                            }
+                        }
+                    },
+                    "relationships": {
+                        "title": "Relationships",
+                        "type": "object",
+                        "required": [
+                            "photos",
+                            "books"
+                        ],
+                        "properties": {
+                            "photos": {
+                                "title": "Photos",
+                                "type": "object",
+                                "required": [
+                                    "data"
+                                ],
+                                "properties": {
+                                    "data": {
+                                        "title": "Data",
+                                        "type": "array",
+                                        "default": [],
+                                        "items": {
+                                            "title": "Items",
+                                            "type": "object",
+                                            "required": [
+                                                "type",
+                                                "id"
+                                            ],
+                                            "properties": {
+                                                "type": {
+                                                    "title": "Type",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "photos"
+                                                    ],
+                                                    "pattern": "^.*$"
+                                                },
+                                                "id": {
+                                                    "title": "Id",
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "101"
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "books": {
+                                "title": "Books",
+                                "type": "object",
+                                "required": [
+                                    "data"
+                                ],
+                                "properties": {
+                                    "data": {
+                                        "title": "Data",
+                                        "type": "array",
+                                        "default": []
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "links": {
+                        "title": "Links",
+                        "type": "object",
+                        "required": [
+                            "self"
+                        ],
+                        "properties": {
+                            "self": {
+                                "title": "Self",
+                                "type": "string",
+                                "default": "",
+                                "examples": [
+                                    "/series/1"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

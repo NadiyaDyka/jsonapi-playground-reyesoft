@@ -1,0 +1,282 @@
+{
+    "meta": {
+        "page": 1,
+        "resources_per_page": 10,
+        "total_resources": 11
+    },
+    "data": [
+        {
+            "type": "series",
+            "id": "1",
+            "attributes": {
+                "title": "Series 8931153"
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "101"
+                        },
+                        {
+                            "type": "photos",
+                            "id": "102"
+                        }
+                    ]
+                },
+                "books": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/series/1"
+            }
+        },
+        {
+            "type": "series",
+            "id": "2",
+            "attributes": {
+                "title": "Series 9013675"
+            },
+            "relationships": {
+                "photos": {
+                    "data": []
+                },
+                "books": {
+                    "data": [
+                        {
+                            "type": "books",
+                            "id": "22"
+                        },
+                        {
+                            "type": "books",
+                            "id": "38"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/series/2"
+            }
+        },
+        {
+            "type": "series",
+            "id": "3",
+            "attributes": {
+                "title": "Series 1221852"
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "103"
+                        }
+                    ]
+                },
+                "books": {
+                    "data": [
+                        {
+                            "type": "books",
+                            "id": "35"
+                        },
+                        {
+                            "type": "books",
+                            "id": "41"
+                        },
+                        {
+                            "type": "books",
+                            "id": "50"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/series/3"
+            }
+        },
+        {
+            "type": "series",
+            "id": "4",
+            "attributes": {
+                "title": "Series 8056099"
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "104"
+                        },
+                        {
+                            "type": "photos",
+                            "id": "105"
+                        }
+                    ]
+                },
+                "books": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/series/4"
+            }
+        },
+        {
+            "type": "series",
+            "id": "5",
+            "attributes": {
+                "title": "Series 0758750"
+            },
+            "relationships": {
+                "photos": {
+                    "data": []
+                },
+                "books": {
+                    "data": [
+                        {
+                            "type": "books",
+                            "id": "15"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/series/5"
+            }
+        },
+        {
+            "type": "series",
+            "id": "6",
+            "attributes": {
+                "title": "Series 9068632"
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "106"
+                        }
+                    ]
+                },
+                "books": {
+                    "data": [
+                        {
+                            "type": "books",
+                            "id": "5"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/series/6"
+            }
+        },
+        {
+            "type": "series",
+            "id": "7",
+            "attributes": {
+                "title": "Series 3759121"
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "107"
+                        },
+                        {
+                            "type": "photos",
+                            "id": "108"
+                        }
+                    ]
+                },
+                "books": {
+                    "data": [
+                        {
+                            "type": "books",
+                            "id": "10"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/series/7"
+            }
+        },
+        {
+            "type": "series",
+            "id": "8",
+            "attributes": {
+                "title": "Series 2611985"
+            },
+            "relationships": {
+                "photos": {
+                    "data": []
+                },
+                "books": {
+                    "data": [
+                        {
+                            "type": "books",
+                            "id": "49"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/series/8"
+            }
+        },
+        {
+            "type": "series",
+            "id": "9",
+            "attributes": {
+                "title": "Series 9910181"
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "109"
+                        }
+                    ]
+                },
+                "books": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/series/9"
+            }
+        },
+        {
+            "type": "series",
+            "id": "10",
+            "attributes": {
+                "title": "Series 3547515"
+            },
+            "relationships": {
+                "photos": {
+                    "data": [
+                        {
+                            "type": "photos",
+                            "id": "110"
+                        },
+                        {
+                            "type": "photos",
+                            "id": "111"
+                        }
+                    ]
+                },
+                "books": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/series/10"
+            }
+        }
+    ]
+}

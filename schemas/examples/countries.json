@@ -1,0 +1,45 @@
+{
+    "meta": [],
+    "data": [
+        {
+            "type": "countries",
+            "id": "AR",
+            "attributes": {
+                "name": "Argentina"
+            },
+            "links": {
+                "self": "/countries/AR"
+            }
+        },
+        {
+            "type": "countries",
+            "id": "CO",
+            "attributes": {
+                "name": "Colombia"
+            },
+            "links": {
+                "self": "/countries/CO"
+            }
+        },
+        {
+            "type": "countries",
+            "id": "BO",
+            "attributes": {
+                "name": "Bolivia"
+            },
+            "links": {
+                "self": "/countries/BO"
+            }
+        },
+        {
+            "type": "countries",
+            "id": "AW",
+            "attributes": {
+                "name": "Aruba"
+            },
+            "links": {
+                "self": "/countries/AW"
+            }
+        }
+    ]
+}

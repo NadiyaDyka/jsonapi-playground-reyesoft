@@ -1,0 +1,212 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 	
+	"type": "object",
+	"required": [
+		"meta",
+		"data"
+	],
+	"properties": {
+		"meta": {
+			"type": "object",
+			"required": [
+				"page",
+				"resources_per_page",
+				"total_resources"
+			],
+			"properties": {
+				"page": {
+					"title": "Page", 
+					"type": "integer",
+					"examples": [
+						1
+					],
+					"default": 0
+				},
+				"resources_per_page": {
+					"title": "Resources_per_page", 
+					"type": "integer",
+					"examples": [
+						10
+					],
+					"default": 0
+				},
+				"total_resources": {
+					"title": "Total_resources", 
+					"type": "integer",
+					"examples": [
+						11
+					],
+					"default": 0
+				}
+			}
+		}
+,
+		"data": {
+			"title": "Data", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"type",
+					"id",
+					"attributes",
+					"relationships",
+					"links"
+				],
+				"properties": {
+					"type": {
+						"title": "Type", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"authors"
+						]
+					},
+					"id": {
+						"title": "Id", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"1"
+						]
+					},
+					"attributes": {
+						"title": "Attributes", 
+						"type": "object",
+						"required": [
+							"name",
+							"birthplace",
+							"date_of_birth",
+							"date_of_death"
+						],
+						"properties": {
+							"name": {
+								"title": "Name", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"Mozelle Stark"
+								]
+							},
+							"birthplace": {
+								"title": "Birthplace", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"Peru"
+								]
+							},
+							"date_of_birth": {
+								"title": "Date_of_birth", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"1989-10-27"
+								]
+							},
+							"date_of_death": {
+								"title": "Date_of_death", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"1979-06-25"
+								]
+							}
+						}
+					}
+,
+					"relationships": {
+						"title": "Relationships", 
+						"type": "object",
+						"required": [
+							"photos",
+							"books"
+						],
+						"properties": {
+							"photos": {
+								"title": "Photos", 
+								"type": "object",
+								"required": [
+									"data"
+								],
+								"properties": {
+									"data": {
+										"title": "Data", 
+										"type": "array",
+										"default": [],
+										"items":{
+											"title": "Items", 
+											"type": "object",
+											"required": [
+												"type",
+												"id"
+											],
+											"properties": {
+												"type": {
+													"title": "Type", 
+													"type": "string",
+													"default": "",
+													"examples": [
+														"photos"
+													]
+												},
+												"id": {
+													"title": "Id", 
+													"type": "string",
+													"default": "",
+													"examples": [
+														"1"
+													]
+												}
+											}
+										}
+
+									}
+								}
+							}
+,
+							"books": {
+								"title": "Books", 
+								"type": "object",
+								"required": [
+									"data"
+								],
+								"properties": {
+									"data": {
+										"title": "Data", 
+										"type": "array",
+										"default": []
+									}
+								}
+							}
+
+						}
+					}
+,
+					"links": {
+						"title": "Links", 
+						"type": "object",
+						"required": [
+							"self"
+						],
+						"properties": {
+							"self": {
+								"title": "Self", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"/authors/1"
+								]
+							}
+						}
+					}
+
+				}
+			}
+
+		}
+	}
+}
