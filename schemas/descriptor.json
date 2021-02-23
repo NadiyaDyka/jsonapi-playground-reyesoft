@@ -1,0 +1,41 @@
+{
+    "host": "https://api.github.com/repos/NadiyaDyka/jsonapi-playground-reyesoft/contents",
+    "schemas": {
+
+        "authors_schema": {
+            "title": "Schema for authors",
+            "path": "/schemas/authors_schema.json"             
+        },
+
+        "books_schema": {
+            "title": "Schema for books",
+            "path": "/schemas/books_schema.json"             
+        },
+
+        "chapters_schema": {
+            "title": "Schema for chapterss",
+            "path": "/schemas/chapters_schema.json"             
+        },
+
+        "photos_schema": {
+            "title": "Schema for photos",
+            "path": "/schemas/photos_schema.json"             
+        },
+
+        "series_schema": {
+            "title": "Schema for series",
+            "path": "/schemas/series_schema.json"             
+        },
+
+        "stores_schema": {
+            "title": "Schema for stores",
+            "path": "/schemas/stores_schema.json"             
+        },
+
+        "counties_schema": {
+            "title": "Schema for countrises",
+            "path": "/schemas/countries_schema.json"             
+        }
+
+    }
+}
