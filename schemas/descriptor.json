@@ -35,9 +35,19 @@
             "path": "/schemas/photos_schema.json"             
         },
 
+        "photo_schema": {
+            "title": "Schema for one photo",
+            "path": "/schemas/photo_schema.json"             
+        },
+
         "series_schema": {
             "title": "Schema for series",
             "path": "/schemas/series_schema.json"             
+        },
+
+        "serie_schema": {
+            "title": "Schema for serie",
+            "path": "/schemas/serie_schema.json"             
         },
 
         "stores_schema": {
@@ -45,9 +55,19 @@
             "path": "/schemas/stores_schema.json"             
         },
 
+        "store_schema": {
+            "title": "Schema for store",
+            "path": "/schemas/store_schema.json"             
+        },
+
         "countries_schema": {
             "title": "Schema for countries",
             "path": "/schemas/countries_schema.json"             
+        },
+
+        "country_schema": {
+            "title": "Schema for country",
+            "path": "/schemas/country_schema.json"             
         }
 
     }

@@ -1,0 +1,106 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1614182969.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"meta",
+		"data"
+	],
+	"properties": {
+		"meta": {
+			"$id": "#root/meta", 
+			"title": "Meta", 
+			"type": "array",
+			"default": []
+		},
+		"data": {
+			"$id": "#root/data", 
+			"title": "Data", 
+			"type": "object",
+			"required": [
+				"type",
+				"id",
+				"attributes",
+				"links"
+			],
+			"properties": {
+				"type": {
+					"$id": "#root/data/type", 
+					"title": "Type", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"photos"
+					],
+					"pattern": "^.*$"
+				},
+				"id": {
+					"$id": "#root/data/id", 
+					"title": "Id", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"1"
+					],
+					"pattern": "^.*$"
+				},
+				"attributes": {
+					"$id": "#root/data/attributes", 
+					"title": "Attributes", 
+					"type": "object",
+					"required": [
+						"title",
+						"uri"
+					],
+					"properties": {
+						"title": {
+							"$id": "#root/data/attributes/title", 
+							"title": "Title", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"Photo 596"
+							],
+							"pattern": "^.*$"
+						},
+						"uri": {
+							"$id": "#root/data/attributes/uri", 
+							"title": "Uri", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"https://picsum.photos/id/957/400/300.jpg"
+							],
+							"pattern": "^.*$"
+						}
+					}
+				}
+,
+				"links": {
+					"$id": "#root/data/links", 
+					"title": "Links", 
+					"type": "object",
+					"required": [
+						"self"
+					],
+					"properties": {
+						"self": {
+							"$id": "#root/data/links/self", 
+							"title": "Self", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"/photos/1"
+							],
+							"pattern": "^.*$"
+						}
+					}
+				}
+
+			}
+		}
+
+	}
+}
