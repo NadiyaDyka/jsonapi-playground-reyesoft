@@ -45,8 +45,8 @@
             "path": "/schemas/stores_schema.json"             
         },
 
-        "counties_schema": {
-            "title": "Schema for countrises",
+        "countries_schema": {
+            "title": "Schema for countries",
             "path": "/schemas/countries_schema.json"             
         }
 
