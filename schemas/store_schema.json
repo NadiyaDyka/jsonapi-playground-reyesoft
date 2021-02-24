@@ -1,0 +1,159 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+        "meta",
+        "data"
+    ],
+    "properties": {
+        "meta": {
+            "type": "array",
+            "default": []
+        },
+        "data": {
+            "type": "object",
+            "required": [
+                "type",
+                "id",
+                "attributes",
+                "relationships",
+                "links"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "stores"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "id": {
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "2"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "attributes": {
+                    "type": "object",
+                    "required": [
+                        "name",
+                        "address",
+                        "created_by"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "default": "",
+                            "examples": [
+                                "Store 421"
+                            ],
+                            "pattern": "^.*$"
+                        },
+                        "address": {
+                            "type": "string",
+                            "default": "",
+                            "examples": [
+                                "389 Liza Drives"
+                            ],
+                            "pattern": "^.*$"
+                        },
+                        "created_by": {
+                            "type": "integer",
+                            "examples": [
+                                3
+                            ],
+                            "default": 0
+                        }
+                    }
+                },
+                "relationships": {
+                    "type": "object",
+                    "required": [
+                        "photos",
+                        "books",
+                        "countries"
+                    ],
+                    "properties": {
+                        "photos": {
+                            "type": "object",
+                            "required": [
+                                "data"
+                            ],
+                            "properties": {
+                                "data": {
+                                    "type": "array",
+                                    "default": []
+                                }
+                            }
+                        },
+                        "books": {
+                            "type": "object",
+                            "required": [
+                                "data"
+                            ],
+                            "properties": {
+                                "data": {
+                                    "type": "array",
+                                    "default": []
+                                }
+                            }
+                        },
+                        "countries": {
+                            "type": "object",
+                            "required": [
+                                "data"
+                            ],
+                            "properties": {
+                                "data": {
+                                    "type": "object",
+                                    "required": [
+                                        "type",
+                                        "id"
+                                    ],
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "countries"
+                                            ],
+                                            "pattern": "^.*$"
+                                        },
+                                        "id": {
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "AR"
+                                            ],
+                                            "pattern": "^.*$"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "links": {
+                    "type": "object",
+                    "required": [
+                        "self"
+                    ],
+                    "properties": {
+                        "self": {
+                            "type": "string",
+                            "default": "",
+                            "examples": [
+                                "/stores/2"
+                            ],
+                            "pattern": "^.*$"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
