@@ -1,0 +1,333 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1614180716.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"meta",
+		"data"
+	],
+	"properties": {
+		"meta": {
+			"$id": "#root/meta", 
+			"title": "Meta", 
+			"type": "array",
+			"default": []
+		},
+		"data": {
+			"$id": "#root/data", 
+			"title": "Data", 
+			"type": "object",
+			"required": [
+				"type",
+				"id",
+				"attributes",
+				"relationships",
+				"links"
+			],
+			"properties": {
+				"type": {
+					"$id": "#root/data/type", 
+					"title": "Type", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"books"
+					],
+					"pattern": "^.*$"
+				},
+				"id": {
+					"$id": "#root/data/id", 
+					"title": "Id", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"1"
+					],
+					"pattern": "^.*$"
+				},
+				"attributes": {
+					"$id": "#root/data/attributes", 
+					"title": "Attributes", 
+					"type": "object",
+					"required": [
+						"title",
+						"date_published",
+						"isbn"
+					],
+					"properties": {
+						"title": {
+							"$id": "#root/data/attributes/title", 
+							"title": "Title", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"Murazik Group"
+							],
+							"pattern": "^.*$"
+						},
+						"date_published": {
+							"$id": "#root/data/attributes/date_published", 
+							"title": "Date_published", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"2006-12-11"
+							],
+							"pattern": "^.*$"
+						},
+						"isbn": {
+							"$id": "#root/data/attributes/isbn", 
+							"title": "Isbn", 
+							"type": "integer",
+							"examples": [
+								39647540
+							],
+							"default": 0
+						}
+					}
+				}
+,
+				"relationships": {
+					"$id": "#root/data/relationships", 
+					"title": "Relationships", 
+					"type": "object",
+					"required": [
+						"author",
+						"chapters",
+						"photos",
+						"series",
+						"stores"
+					],
+					"properties": {
+						"author": {
+							"$id": "#root/data/relationships/author", 
+							"title": "Author", 
+							"type": "object",
+							"required": [
+								"data"
+							],
+							"properties": {
+								"data": {
+									"$id": "#root/data/relationships/author/data", 
+									"title": "Data", 
+									"type": "object",
+									"required": [
+										"type",
+										"id"
+									],
+									"properties": {
+										"type": {
+											"$id": "#root/data/relationships/author/data/type", 
+											"title": "Type", 
+											"type": "string",
+											"default": "",
+											"examples": [
+												"authors"
+											],
+											"pattern": "^.*$"
+										},
+										"id": {
+											"$id": "#root/data/relationships/author/data/id", 
+											"title": "Id", 
+											"type": "string",
+											"default": "",
+											"examples": [
+												"20"
+											],
+											"pattern": "^.*$"
+										}
+									}
+								}
+
+							}
+						}
+,
+						"chapters": {
+							"$id": "#root/data/relationships/chapters", 
+							"title": "Chapters", 
+							"type": "object",
+							"required": [
+								"data"
+							],
+							"properties": {
+								"data": {
+									"$id": "#root/data/relationships/chapters/data", 
+									"title": "Data", 
+									"type": "array",
+									"default": []
+								}
+							}
+						}
+,
+						"photos": {
+							"$id": "#root/data/relationships/photos", 
+							"title": "Photos", 
+							"type": "object",
+							"required": [
+								"data"
+							],
+							"properties": {
+								"data": {
+									"$id": "#root/data/relationships/photos/data", 
+									"title": "Data", 
+									"type": "array",
+									"default": [],
+									"items":{
+										"$id": "#root/data/relationships/photos/data/items", 
+										"title": "Items", 
+										"type": "object",
+										"required": [
+											"type",
+											"id"
+										],
+										"properties": {
+											"type": {
+												"$id": "#root/data/relationships/photos/data/items/type", 
+												"title": "Type", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"photos"
+												],
+												"pattern": "^.*$"
+											},
+											"id": {
+												"$id": "#root/data/relationships/photos/data/items/id", 
+												"title": "Id", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"151"
+												],
+												"pattern": "^.*$"
+											}
+										}
+									}
+
+								}
+							}
+						}
+,
+						"series": {
+							"$id": "#root/data/relationships/series", 
+							"title": "Series", 
+							"type": "object",
+							"required": [
+								"data"
+							],
+							"properties": {
+								"data": {
+									"$id": "#root/data/relationships/series/data", 
+									"title": "Data", 
+									"type": "object",
+									"required": [
+										"type",
+										"id"
+									],
+									"properties": {
+										"type": {
+											"$id": "#root/data/relationships/series/data/type", 
+											"title": "Type", 
+											"type": "string",
+											"default": "",
+											"examples": [
+												"series"
+											],
+											"pattern": "^.*$"
+										},
+										"id": {
+											"$id": "#root/data/relationships/series/data/id", 
+											"title": "Id", 
+											"type": "string",
+											"default": "",
+											"examples": [
+												"38"
+											],
+											"pattern": "^.*$"
+										}
+									}
+								}
+
+							}
+						}
+,
+						"stores": {
+							"$id": "#root/data/relationships/stores", 
+							"title": "Stores", 
+							"type": "object",
+							"required": [
+								"data"
+							],
+							"properties": {
+								"data": {
+									"$id": "#root/data/relationships/stores/data", 
+									"title": "Data", 
+									"type": "array",
+									"default": [],
+									"items":{
+										"$id": "#root/data/relationships/stores/data/items", 
+										"title": "Items", 
+										"type": "object",
+										"required": [
+											"type",
+											"id"
+										],
+										"properties": {
+											"type": {
+												"$id": "#root/data/relationships/stores/data/items/type", 
+												"title": "Type", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"stores"
+												],
+												"pattern": "^.*$"
+											},
+											"id": {
+												"$id": "#root/data/relationships/stores/data/items/id", 
+												"title": "Id", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"14"
+												],
+												"pattern": "^.*$"
+											}
+										}
+									}
+
+								}
+							}
+						}
+
+					}
+				}
+,
+				"links": {
+					"$id": "#root/data/links", 
+					"title": "Links", 
+					"type": "object",
+					"required": [
+						"self"
+					],
+					"properties": {
+						"self": {
+							"$id": "#root/data/links/self", 
+							"title": "Self", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"/books/1"
+							],
+							"pattern": "^.*$"
+						}
+					}
+				}
+
+			}
+		}
+
+	}
+}

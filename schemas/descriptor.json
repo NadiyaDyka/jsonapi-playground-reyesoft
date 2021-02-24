@@ -15,10 +15,19 @@
             "title": "Schema for books",
             "path": "/schemas/books_schema.json"             
         },
+        "book_schema": {
+            "title": "Schema for one book",
+            "path": "/schemas/book_schema.json"             
+        },
 
         "chapters_schema": {
             "title": "Schema for chapterss",
             "path": "/schemas/chapters_schema.json"             
+        },
+
+        "chapter_schema": {
+            "title": "Schema for chapter",
+            "path": "/schemas/chapter_schema.json"             
         },
 
         "photos_schema": {
