@@ -1,0 +1,162 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": [
+        "meta",
+        "data"
+    ],
+    "properties": {
+        "meta": {
+            "type": "array",
+            "default": []
+        },
+        "data": {
+            "type": "object",
+            "required": [
+                "type",
+                "id",
+                "attributes",
+                "relationships",
+                "links"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "chapters"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "id": {
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "1"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "attributes": {
+                    "type": "object",
+                    "required": [
+                        "title",
+                        "ordering"
+                    ],
+                    "properties": {
+                        "title": {
+                            "type": "string",
+                            "default": "",
+                            "examples": [
+                                "Chapter 809"
+                            ],
+                            "pattern": "^.*$"
+                        },
+                        "ordering": {
+                            "type": "integer",
+                            "examples": [
+                                2965143
+                            ],
+                            "default": 0
+                        }
+                    }
+                },
+                "relationships": {
+                    "type": "object",
+                    "required": [
+                        "photos",
+                        "book"
+                    ],
+                    "properties": {
+                        "photos": {
+                            "type": "object",
+                            "required": [
+                                "data"
+                            ],
+                            "properties": {
+                                "data": {
+                                    "type": "array",
+                                    "default": [],
+                                    "items": {
+                                        "type": "object",
+                                        "required": [
+                                            "type",
+                                            "id"
+                                        ],
+                                        "properties": {
+                                            "type": {
+                                                "type": "string",
+                                                "default": "",
+                                                "examples": [
+                                                    "photos"
+                                                ],
+                                                "pattern": "^.*$"
+                                            },
+                                            "id": {
+                                                "type": "string",
+                                                "default": "",
+                                                "examples": [
+                                                    "201"
+                                                ],
+                                                "pattern": "^.*$"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "book": {
+                            "type": "object",
+                            "required": [
+                                "data"
+                            ],
+                            "properties": {
+                                "data": {
+                                    "type": "object",
+                                    "required": [
+                                        "type",
+                                        "id"
+                                    ],
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "books"
+                                            ],
+                                            "pattern": "^.*$"
+                                        },
+                                        "id": {
+                                            "type": "string",
+                                            "default": "",
+                                            "examples": [
+                                                "8"
+                                            ],
+                                            "pattern": "^.*$"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "links": {
+                    "type": "object",
+                    "required": [
+                        "self"
+                    ],
+                    "properties": {
+                        "self": {
+                            "type": "string",
+                            "default": "",
+                            "examples": [
+                                "/chapters/1"
+                            ],
+                            "pattern": "^.*$"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
