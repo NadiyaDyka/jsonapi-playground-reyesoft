@@ -1,0 +1,239 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1614174916.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"meta",
+		"data"
+	],
+	"properties": {
+		"meta": {
+			"$id": "#root/meta", 
+			"title": "Meta", 
+			"type": "array",
+			"default": []
+		},
+		"data": {
+			"$id": "#root/data", 
+			"title": "Data", 
+			"type": "object",
+			"required": [
+				"type",
+				"id",
+				"attributes",
+				"relationships",
+				"links"
+			],
+			"properties": {
+				"type": {
+					"$id": "#root/data/type", 
+					"title": "Type", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"authors"
+					],
+					"pattern": "^.*$"
+				},
+				"id": {
+					"$id": "#root/data/id", 
+					"title": "Id", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"1"
+					],
+					"pattern": "^.*$"
+				},
+				"attributes": {
+					"$id": "#root/data/attributes", 
+					"title": "Attributes", 
+					"type": "object",
+					"required": [
+						"name",
+						"birthplace",
+						"date_of_birth",
+						"date_of_death"
+					],
+					"properties": {
+						"name": {
+							"$id": "#root/data/attributes/name", 
+							"title": "Name", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"Dr. Walker McLaughlin I"
+							],
+							"pattern": "^.*$"
+						},
+						"birthplace": {
+							"$id": "#root/data/attributes/birthplace", 
+							"title": "Birthplace", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"Hungary"
+							],
+							"pattern": "^.*$"
+						},
+						"date_of_birth": {
+							"$id": "#root/data/attributes/date_of_birth", 
+							"title": "Date_of_birth", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"1973-09-13"
+							],
+							"pattern": "^.*$"
+						},
+						"date_of_death": {
+							"$id": "#root/data/attributes/date_of_death", 
+							"title": "Date_of_death", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"2017-10-28"
+							],
+							"pattern": "^.*$"
+						}
+					}
+				}
+,
+				"relationships": {
+					"$id": "#root/data/relationships", 
+					"title": "Relationships", 
+					"type": "object",
+					"required": [
+						"photos",
+						"books"
+					],
+					"properties": {
+						"photos": {
+							"$id": "#root/data/relationships/photos", 
+							"title": "Photos", 
+							"type": "object",
+							"required": [
+								"data"
+							],
+							"properties": {
+								"data": {
+									"$id": "#root/data/relationships/photos/data", 
+									"title": "Data", 
+									"type": "array",
+									"default": [],
+									"items":{
+										"$id": "#root/data/relationships/photos/data/items", 
+										"title": "Items", 
+										"type": "object",
+										"required": [
+											"type",
+											"id"
+										],
+										"properties": {
+											"type": {
+												"$id": "#root/data/relationships/photos/data/items/type", 
+												"title": "Type", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"photos"
+												],
+												"pattern": "^.*$"
+											},
+											"id": {
+												"$id": "#root/data/relationships/photos/data/items/id", 
+												"title": "Id", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"1"
+												],
+												"pattern": "^.*$"
+											}
+										}
+									}
+
+								}
+							}
+						}
+,
+						"books": {
+							"$id": "#root/data/relationships/books", 
+							"title": "Books", 
+							"type": "object",
+							"required": [
+								"data"
+							],
+							"properties": {
+								"data": {
+									"$id": "#root/data/relationships/books/data", 
+									"title": "Data", 
+									"type": "array",
+									"default": [],
+									"items":{
+										"$id": "#root/data/relationships/books/data/items", 
+										"title": "Items", 
+										"type": "object",
+										"required": [
+											"type",
+											"id"
+										],
+										"properties": {
+											"type": {
+												"$id": "#root/data/relationships/books/data/items/type", 
+												"title": "Type", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"books"
+												],
+												"pattern": "^.*$"
+											},
+											"id": {
+												"$id": "#root/data/relationships/books/data/items/id", 
+												"title": "Id", 
+												"type": "string",
+												"default": "",
+												"examples": [
+													"11"
+												],
+												"pattern": "^.*$"
+											}
+										}
+									}
+
+								}
+							}
+						}
+
+					}
+				}
+,
+				"links": {
+					"$id": "#root/data/links", 
+					"title": "Links", 
+					"type": "object",
+					"required": [
+						"self"
+					],
+					"properties": {
+						"self": {
+							"$id": "#root/data/links/self", 
+							"title": "Self", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"/authors/1"
+							],
+							"pattern": "^.*$"
+						}
+					}
+				}
+
+			}
+		}
+
+	}
+}
