@@ -6,6 +6,10 @@
             "title": "Schema for authors",
             "path": "/schemas/authors_schema.json"             
         },
+        "author_schema": {
+            "title": "Schema for single author",
+            "path": "/schemas/author_schema.json"             
+        },
 
         "books_schema": {
             "title": "Schema for books",
