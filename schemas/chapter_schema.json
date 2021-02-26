@@ -49,8 +49,7 @@
                             "default": "",
                             "examples": [
                                 "Chapter 809"
-                            ],
-                            "pattern": "^.*$"
+                            ]
                         },
                         "ordering": {
                             "type": "integer",
@@ -89,16 +88,14 @@
                                                 "default": "",
                                                 "examples": [
                                                     "photos"
-                                                ],
-                                                "pattern": "^.*$"
+                                                ]
                                             },
                                             "id": {
                                                 "type": "string",
                                                 "default": "",
                                                 "examples": [
                                                     "201"
-                                                ],
-                                                "pattern": "^.*$"
+                                                ]
                                             }
                                         }
                                     }
@@ -123,16 +120,14 @@
                                             "default": "",
                                             "examples": [
                                                 "books"
-                                            ],
-                                            "pattern": "^.*$"
+                                            ]
                                         },
                                         "id": {
                                             "type": "string",
                                             "default": "",
                                             "examples": [
                                                 "8"
-                                            ],
-                                            "pattern": "^.*$"
+                                            ]
                                         }
                                     }
                                 }
@@ -151,8 +146,7 @@
                             "default": "",
                             "examples": [
                                 "/chapters/1"
-                            ],
-                            "pattern": "^.*$"
+                            ]
                         }
                     }
                 }

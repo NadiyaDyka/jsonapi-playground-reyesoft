@@ -26,16 +26,14 @@
                     "default": "",
                     "examples": [
                         "stores"
-                    ],
-                    "pattern": "^.*$"
+                    ]
                 },
                 "id": {
                     "type": "string",
                     "default": "",
                     "examples": [
                         "2"
-                    ],
-                    "pattern": "^.*$"
+                    ]
                 },
                 "attributes": {
                     "type": "object",
@@ -50,16 +48,14 @@
                             "default": "",
                             "examples": [
                                 "Store 421"
-                            ],
-                            "pattern": "^.*$"
+                            ]
                         },
                         "address": {
                             "type": "string",
                             "default": "",
                             "examples": [
                                 "389 Liza Drives"
-                            ],
-                            "pattern": "^.*$"
+                            ]
                         },
                         "created_by": {
                             "type": "integer",
@@ -120,16 +116,14 @@
                                             "default": "",
                                             "examples": [
                                                 "countries"
-                                            ],
-                                            "pattern": "^.*$"
+                                            ]
                                         },
                                         "id": {
                                             "type": "string",
                                             "default": "",
                                             "examples": [
                                                 "AR"
-                                            ],
-                                            "pattern": "^.*$"
+                                            ]
                                         }
                                     }
                                 }
@@ -148,8 +142,7 @@
                             "default": "",
                             "examples": [
                                 "/stores/2"
-                            ],
-                            "pattern": "^.*$"
+                            ]
                         }
                     }
                 }

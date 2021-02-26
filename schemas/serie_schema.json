@@ -26,16 +26,14 @@
                     "default": "",
                     "examples": [
                         "series"
-                    ],
-                    "pattern": "^.*$"
+                    ]
                 },
                 "id": {
                     "type": "string",
                     "default": "",
                     "examples": [
                         "2"
-                    ],
-                    "pattern": "^.*$"
+                    ]
                 },
                 "attributes": {
                     "type": "object",
@@ -48,8 +46,7 @@
                             "default": "",
                             "examples": [
                                 "Series 1348819"
-                            ],
-                            "pattern": "^.*$"
+                            ]
                         }
                     }
                 },
@@ -97,8 +94,7 @@
                             "default": "",
                             "examples": [
                                 "/series/2"
-                            ],
-                            "pattern": "^.*$"
+                            ]
                         }
                     }
                 }

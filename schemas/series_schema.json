@@ -8,8 +8,6 @@
     ],
     "properties": {
         "meta": {
-            "$id": "#root/meta",
-            "title": "Meta",
             "type": "object",
             "required": [
                 "page",
