@@ -1,0 +1,184 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"required": [	
+		"data"
+	],
+	"properties": {		
+		"data": {
+			"type": "object",
+			"required": [
+				"type",
+				"id",
+				"attributes",
+				"relationships",
+				"links"
+			],
+			"properties": {
+				"type": {
+					"type": "string",
+					"default": "",
+					"examples": [
+						"authors"
+					]
+				},
+				"id": {
+					"type": "string",
+					"default": "",
+					"examples": [
+						"1"
+					]
+				},
+				"attributes": {
+					"type": "object",
+					"required": [
+						"name",
+						"birthplace",
+						"date_of_birth",
+						"date_of_death"
+					],
+					"properties": {
+						"name": {
+							"type": "string",
+							"default": "",
+							"examples": [
+								"Dr. Walker McLaughlin I"
+							]
+						},
+						"birthplace": {
+							"title": "Birthplace",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"Hungary"
+							]
+						},
+						"date_of_birth": {
+							"title": "Date_of_birth",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"1973-09-13"
+							]
+						},
+						"date_of_death": {
+							"title": "Date_of_death",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"2017-10-28"
+							]
+						}
+					}
+				},
+				"relationships": {
+					"title": "Relationships",
+					"type": "object",
+					"required": [
+						"photos",
+						"books"
+					],
+					"properties": {
+						"photos": {
+							"title": "Photos",
+							"type": "object",
+							"required": [
+								"data"
+							],
+							"properties": {
+								"data": {
+									"title": "Data",
+									"type": "array",
+									"default": [],
+									"items": {
+										"title": "Items",
+										"type": "object",
+										"required": [
+											"type",
+											"id"
+										],
+										"properties": {
+											"type": {
+												"title": "Type",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"photos"
+												]
+											},
+											"id": {
+												"title": "Id",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"1"
+												]
+											}
+										}
+									}
+								}
+							}
+						},
+						"books": {
+							"title": "Books",
+							"type": "object",
+							"required": [
+								"data"
+							],
+							"properties": {
+								"data": {
+									"title": "Data",
+									"type": "array",
+									"default": [],
+									"items": {
+										"title": "Items",
+										"type": "object",
+										"required": [
+											"type",
+											"id"
+										],
+										"properties": {
+											"type": {
+												"title": "Type",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"books"
+												]
+											},
+											"id": {
+												"title": "Id",
+												"type": "string",
+												"default": "",
+												"examples": [
+													"11"
+												]
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"links": {
+					"title": "Links",
+					"type": "object",
+					"required": [
+						"self"
+					],
+					"properties": {
+						"self": {
+							"title": "Self",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"/authors/1"
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}
