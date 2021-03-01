@@ -11,6 +11,11 @@
             "path": "/schemas/author_schema.json"             
         },
 
+        "new_author_schema": {
+            "title": "Schema for single author",
+            "path": "/schemas/new_author_schema.json"             
+        },
+
         "books_schema": {
             "title": "Schema for books",
             "path": "/schemas/books_schema.json"             
